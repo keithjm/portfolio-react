@@ -1,4 +1,8 @@
 .projects {
   margin-left: 10%;
   margin-right: 10%;
+  /* display: grid; */
+  /* grid-auto-rows: 25%; */
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* grid-gap: 10px; */
 }
