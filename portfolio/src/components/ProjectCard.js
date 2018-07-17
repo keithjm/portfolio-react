@@ -4,7 +4,7 @@ import { Button, ButtonToolbar, Col } from "react-bootstrap";
 import projectPlaceholder from "../assets/code-placeholder.png";
 const ProjectCard = props => (
   <Col xs={12} md={3} lg={3}>
-    <div className="card">
+    <div className="card ">
       {props.projectData.projectLogo ? (
         <div id="logo">
           <img

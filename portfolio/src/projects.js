@@ -5,7 +5,7 @@ const projects = [
     projectLogo: require("./assets/JavaScript-logo.png"),
     projectLink: "https://facebark1.herokuapp.com",
     projectGithub: "https://github.com/bh68484/Project2",
-    technologies: ["jQuery", "Node.js", "MySQL"]
+    technologies: ["jQuery", "Node.js", "MySQL", "Passport"]
   },
   {
     projectName: "Clicky Game",
@@ -20,7 +20,7 @@ const projects = [
     projectDesc: "An app to connect solo travelers",
     projectLogo: require("./assets/react-logo.png"),
     projectGithub: "https://github.com/TravelAppProject3/Traveler",
-    technologies: ["React", "Node.js", "MongoDB", "mongoose"]
+    technologies: ["React", "Node.js", "MongoDB", "mongoose", "Passport"]
   },
   {
     projectName: "React Portfolio",

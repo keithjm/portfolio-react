@@ -5,14 +5,12 @@ import logo from "./logo.svg";
 import "./App.css";
 import NavigationBar from "./components/NavigationBar.js";
 // import ProjectCard from "./components/ProjectCard";
-// import AboutPage from "./components/AboutPage";
+import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects.js";
 // import ContactPage from "./components/ContactPage";
 import "./projects";
-
 import PortFooter from "./components/PortFooter";
 import projects from "./projects";
-
 const ProjectsPage = () => {
   return <Projects projectObject={projects} />;
 };
@@ -23,13 +21,12 @@ class App extends Component {
       <Router>
         <div>
           <NavigationBar />
-          <Wrapper>
-            {/* <Route exact path="/" component={AboutPage} /> */}
-            {/* <Route exact path="/about" component={AboutPage} /> */}
-            <Route exact path="/projects" component={ProjectsPage} />
-            {/* <Route exact path="/contact" component={ContactPage} /> */}
-          </Wrapper>
-          {/* <Footer /> */}
+          {/* <Wrapper> */}
+          <Route exact path="/" component={AboutMe} />
+          <Route exact path="/about" component={AboutMe} />
+          <Route exact path="/projects" component={ProjectsPage} />
+          {/* <Route exact path="/contact" component={ContactPage} /> */}
+          {/* </Wrapper> */}
         </div>
       </Router>
     );
