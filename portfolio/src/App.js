@@ -4,10 +4,9 @@ import Wrapper from "./components/Wrapper";
 import logo from "./logo.svg";
 import "./App.css";
 import NavigationBar from "./components/NavigationBar.js";
-// import ProjectCard from "./components/ProjectCard";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects.js";
-// import ContactPage from "./components/ContactPage";
+import Contact from "./components/Contact";
 import "./projects";
 import PortFooter from "./components/PortFooter";
 import projects from "./projects";
@@ -21,12 +20,10 @@ class App extends Component {
       <Router>
         <div>
           <NavigationBar />
-          {/* <Wrapper> */}
           <Route exact path="/" component={AboutMe} />
           <Route exact path="/about" component={AboutMe} />
           <Route exact path="/projects" component={ProjectsPage} />
-          {/* <Route exact path="/contact" component={ContactPage} /> */}
-          {/* </Wrapper> */}
+          <Route exact path="/contact" component={Contact} />
         </div>
       </Router>
     );
