@@ -2,12 +2,15 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import "../css/projects.css";
 import { Row } from "react-bootstrap";
+import Wrapper from "./Wrapper";
 
 const Projects = props => (
-  <div className="projects">
-    {bootStrapRow(props)}
-    {/* {props.projectObject.map(project => <ProjectCard projectData={project} />)} */}
-  </div>
+  <Wrapper>
+    <div className="projects">
+      {bootStrapRow(props)}
+      {/* {props.projectObject.map(project => <ProjectCard projectData={project} />)} */}
+    </div>
+  </Wrapper>
 );
 
 let bootStrapRow = item => {
@@ -28,13 +31,12 @@ let bootStrapRow = item => {
       columns.push(<ProjectCard projectData={project} />);
       x++;
     }
-    console.log(x);
+    return 1;
   });
+
   if (x < 3) {
     rows.push(<Row> {columns} </Row>);
   }
-
-  console.log(rows);
   return rows;
 };
 

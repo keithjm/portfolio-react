@@ -1,14 +1,11 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Wrapper from "./components/Wrapper";
-import logo from "./logo.svg";
 import "./App.css";
 import NavigationBar from "./components/NavigationBar.js";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects.js";
 import Contact from "./components/Contact";
 import "./projects";
-import PortFooter from "./components/PortFooter";
 import projects from "./projects";
 const ProjectsPage = () => {
   return <Projects projectObject={projects} />;
