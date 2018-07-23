@@ -17,7 +17,7 @@ class App extends Component {
       <Router>
         <div>
           <NavigationBar />
-          <Route exact path="/" component={AboutMe} />
+          <Route exact path="/" component={ProjectsPage} />
           <Route exact path="/about" component={AboutMe} />
           <Route exact path="/projects" component={ProjectsPage} />
           <Route exact path="/contact" component={Contact} />

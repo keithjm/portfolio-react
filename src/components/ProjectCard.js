@@ -5,28 +5,45 @@ import projectPlaceholder from "../assets/code-placeholder.png";
 const ProjectCard = props => (
   <Col xs={12} md={3} lg={3}>
     <div className="card ">
-      {props.projectData.projectLogo ? (
-        <div id="logo">
+      {/* {props.projectData.projectLogo ? (
+          <div id="logo">
+            <img
+              src={props.projectData.projectLogo}
+              alt={props.projectData.projectName + " logo"}
+            />
+          </div>
+        ) : (
           <img
-            src={props.projectData.projectLogo}
-            alt={props.projectData.projectName + " logo"}
+            src={projectPlaceholder}
+            alt={props.projectData.projectName + " placeholder"}
           />
-        </div>
-      ) : (
-        <img
-          src={projectPlaceholder}
-          alt={props.projectData.projectName + " placeholder"}
-        />
-      )}
+        )} */}
 
       <div className="card-info">
-        <h4>
+        <h3 id="project-title">
           <b>{props.projectData.projectName}</b>
-        </h4>
-        <p>{props.projectData.projectDesc}</p>
+        </h3>
+        {props.projectData.projectLogo ? (
+          <div id="logo">
+            <img
+              id="logo"
+              src={props.projectData.projectLogo}
+              alt={props.projectData.projectName + " logo"}
+            />
+          </div>
+        ) : (
+          <div id="logo">
+            <img
+              id="logo"
+              src={projectPlaceholder}
+              alt={props.projectData.projectName + " placeholder"}
+            />
+          </div>
+        )}
+        <p id="project-description">{props.projectData.projectDesc}</p>
         {props.projectData.technologies ? (
           <div>
-            <p>Technologies/Services Used</p>
+            <p id="technology-used-title">Technologies/Services Used</p>
 
             <ul>
               {props.projectData.technologies.map(technology => (
